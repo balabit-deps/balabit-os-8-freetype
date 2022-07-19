@@ -1,3 +1,24 @@
+freetype (2.10.1-2ubuntu0.2) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Heap buffer overflow in sfnt_init_face
+    - debian/patches/CVE-2022-27404.patch: avoid invalid face index in
+      src/sfnt/sfobjs.c.
+    - CVE-2022-27404
+  * SECURITY UPDATE: Segmentation violation in FNT_Size_Request
+    - debian/patches/CVE-2022-27405.patch: properly guard face_index in
+      src/base/ftobjs.c.
+    - CVE-2022-27405
+  * SECURITY UPDATE: Segmentation violation in FT_Request_Size
+    - debian/patches/CVE-2022-27406.patch: guard face->size in
+      src/base/ftobjs.c.
+    - CVE-2022-27406
+  * SECURITY UPDATE: Heap-based buffer overflow in ftbench demo
+    - debian/patches/CVE-2022-31782.patch: check the number of glyphs in
+      ft2demos/src/ftbench.c.
+    - CVE-2022-31782
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Jul 2022 11:28:34 -0400
+
 freetype (2.10.1-2ubuntu0.1) focal-security; urgency=medium
 
   * SECURITY UPDATE: heap buffer overflow via integer truncation in
