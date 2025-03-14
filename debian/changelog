@@ -1,3 +1,16 @@
+freetype (2.10.1-2ubuntu0.4) focal-security; urgency=medium
+
+  * SECURITY UPDATE: OOB write via font subglyph structures parsing
+    - debian/patches/CVE-2025-27363.patch: make sure limit doesn't overflow
+      in src/truetype/ttgload.c.
+    - CVE-2025-27363
+  * SECURITY UPDATE: DoS in gvar table loading (LP: #2028863)
+    - debian/patches/lp2028863-dos.patch: add better checks for loading
+      gvar table in src/truetype/ttgxvar.c.
+    - No CVE number
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 14 Mar 2025 13:03:51 -0400
+
 freetype (2.10.1-2ubuntu0.3) focal-security; urgency=medium
 
   * SECURITY UPDATE: Integer overflow

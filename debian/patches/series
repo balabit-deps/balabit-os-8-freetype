@@ -13,3 +13,5 @@ CVE-2022-27405.patch
 CVE-2022-27406.patch
 CVE-2022-31782.patch
 CVE-2023-2004.patch
+CVE-2025-27363.patch
+lp2028863-dos.patch
